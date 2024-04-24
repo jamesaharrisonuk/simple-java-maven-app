@@ -30,5 +30,7 @@ set +x
 echo 'The following command runs and outputs the execution of your Java'
 echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
 set -x
+echo 'variables'
 java  -jar "/var/jenkins_home/workspace/Github Pipeline@2/target/${NAME}-${VERSION}.jar"
-#java -jar "/var/jenkins_home/workspace/Github Pipeline@2/target/my-app-1.0-SNAPSHOT.jar"
+echo 'hardcoded'
+java -jar "/var/jenkins_home/workspace/Github Pipeline@2/target/my-app-1.0-SNAPSHOT.jar"
