@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-pwd
+DIR=$(pwd)
 
 echo 'The following Maven command installs your Maven-built Java application'
 echo 'into the local Maven repository, which will ultimately be stored in'
@@ -31,6 +31,6 @@ echo 'The following command runs and outputs the execution of your Java'
 echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
 set -x
 echo 'variables'
-java  -jar "/var/jenkins_home/workspace/Github Pipeline@2/target/${NAME}-${VERSION}.jar"
+java  -jar ${DIR}/target/${NAME}-${VERSION}.jar
 echo 'hardcoded'
-java -jar "/var/jenkins_home/workspace/Github Pipeline@2/target/my-app-1.0-SNAPSHOT.jar"
+java -jar /var/jenkins_home/workspace/Github_Pipeline_2/target/my-app-1.0-SNAPSHOT.jar
