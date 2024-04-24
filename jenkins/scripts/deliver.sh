@@ -31,6 +31,4 @@ echo 'The following command runs and outputs the execution of your Java'
 echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
 
 echo 'variables'
-java  -jar ${DIR}/target/${NAME}-${VERSION}.jar
-echo 'hardcoded'
-java -jar /var/jenkins_home/workspace/Github_Pipeline_2/target/my-app-1.0-SNAPSHOT.jar
+java  -jar target/${NAME}-${VERSION}.jar
